@@ -556,7 +556,30 @@ p:last-child { margin-bottom: 0; }
   border-radius: var(--radius-lg);
   padding: 2rem;
   position: relative;
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
 }
+
+.review-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.review-card-top .stars { margin-bottom: 0; }
+
+.google-g {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  opacity: 0.75;
+  transition: opacity 0.2s;
+}
+
+.review-card:hover .google-g { opacity: 1; }
 
 .review-card::before {
   content: '\201C';
@@ -573,7 +596,6 @@ p:last-child { margin-bottom: 0; }
   color: #F5B800;
   letter-spacing: 0.1em;
   font-size: 0.9rem;
-  margin-bottom: 1rem;
 }
 
 .review-card p {
