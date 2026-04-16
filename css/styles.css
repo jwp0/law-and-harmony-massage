@@ -349,13 +349,24 @@ p:last-child { margin-bottom: 0; }
   border-color: rgba(148, 118, 255, 0.4);
 }
 
-.service-icon {
-  font-size: 1.25rem;
-  color: var(--purple);
-  margin-bottom: 1rem;
+.service-card-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.6rem;
 }
 
-.service-card h3 { margin-bottom: 0.6rem; }
+.service-card h3 { margin-bottom: 0; }
+
+.service-price {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--purple);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
 
 .service-card p {
   font-size: 0.93rem;
