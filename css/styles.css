@@ -643,39 +643,15 @@ p:last-child { margin-bottom: 0; }
   color: var(--white);
 }
 
-.booking-inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-}
-
-.booking-text .section-eyebrow { color: var(--cyan); }
-.booking-text h2 { color: var(--white); margin-bottom: 1rem; }
-.booking-text p { color: rgba(255,255,255,0.65); margin-bottom: 2rem; }
-
-.booking-widget-wrap {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  min-height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.booking-widget-placeholder {
+.booking-cta {
   text-align: center;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.75rem;
+  max-width: 580px;
+  margin: 0 auto;
 }
 
-.booking-widget-placeholder p { color: rgba(255,255,255,0.5); font-size: 0.9rem; margin: 0; }
-.booking-widget-placeholder small { color: rgba(255,255,255,0.3); font-size: 0.78rem; }
+.booking-cta .section-eyebrow { color: var(--cyan); }
+.booking-cta h2 { color: var(--white); margin-bottom: 1rem; }
+.booking-cta p { color: rgba(255,255,255,0.65); margin-bottom: 2rem; }
 
 /* --- LOCATION --- */
 .location { background: var(--white); }
@@ -796,11 +772,39 @@ p:last-child { margin-bottom: 0; }
   .heroes-badge { display: flex; justify-content: center; }
   .about-inner { grid-template-columns: 1fr; gap: 2.5rem; }
   .about-image-placeholder { max-width: 100%; aspect-ratio: 4/3; }
-  .booking-inner { grid-template-columns: 1fr; gap: 2.5rem; }
-  .location-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+.location-inner { grid-template-columns: 1fr; gap: 2.5rem; }
   .footer-inner { grid-template-columns: 1fr; text-align: center; }
   .footer-links { justify-content: center; }
-  .footer-book { display: flex; justify-content: center; }
+  .footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 0.85rem;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.5);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.social-links a:hover {
+  color: var(--white);
+  border-color: rgba(255,255,255,0.4);
+}
+
+.social-links svg { width: 16px; height: 16px; }
 }
 
 @media (max-width: 768px) {
